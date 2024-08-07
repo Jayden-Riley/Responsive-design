@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    
+}
+main{
+    
+   
+    border: 3px solid black;
+}
+header{
+    background-color: rgb(3, 14, 3);
+    padding: 20px;
+}
+
+.header-container .user{
+    padding-left: 150px;
+}
+.two{
+   
+    margin-left: 260px;
+    padding-right: 10px;
+    
+    
+}
+
+
+.log {
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(209, 13, 13);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 17px;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid pink;
+}
+
+
+img{
+   
+    border-radius: 50%;
+}
+
+h1{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+
+.clear{
+    background-color:beige;
+    padding: 13px;
+    color: rgb(209, 13, 13);
+    border: none;
+    box-shadow: 1px;
+    padding: 10px;
+    box-shadow:  1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: .9s;
+  
+}
+.clear:hover{
+    transform: scale(.9);
+}
+ .wrapper{
+   
+    padding:15px;
+    
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0.2);
+   
+}
+.hours{
+    /* padding: 20px; */
+    border: 2px pink solid;
+   
+}
+
+.next{
+    background-color: rgb(211, 101, 211);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.that{
+    padding-left: 320px;
+    
+    padding-top: 50px;
+}
+.nav{
+    bottom: 20px;
+    display: flex;
+    transition: 7.s;
+   gap: 20px;
+}
+.ig1{
+    border: 2px solid red;
+    background-color: solid green;
+    
+}
+.ig2{
+    border: 2px solid blue;
+    background-color: solid rgb(0, 0, 0);
+   
+}
+.nav:hover{
+    background-color: cyan;
+    
+}
+.nav p{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+   display: block;
+}
+
+@media screen and (min-width:768px){
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .nav {
+       display: flex;
+    }
+}
+
+
