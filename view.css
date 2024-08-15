@@ -10,7 +10,7 @@ body{
 main{
     
    
-    border: 3px solid black;
+   
 }
 header{
     background-color: rgb(3, 14, 3);
@@ -21,10 +21,9 @@ header{
     padding-left: 150px;
 }
 .two{
-   
-    margin-left: 260px;
+    display: flex;
     padding-right: 10px;
-    
+    justify-content: flex-end;
     
 }
 
@@ -48,7 +47,7 @@ align-items: center;
     gap: 17px;
     padding: 10px;
     overflow: hidden;
-    border: 2px solid pink;
+   
 }
 
 
@@ -96,8 +95,9 @@ h1{
     border-radius: 10px;
 }
 .that{
-    padding-left: 320px;
-    
+    /* padding-left: 320px; */
+    display: flex;
+    justify-content: flex-end;
     padding-top: 50px;
 }
 .nav{
@@ -107,13 +107,15 @@ h1{
    gap: 20px;
 }
 .ig1{
-    border: 2px solid red;
-    background-color: solid green;
-    
+  
+    padding: 10px;
 }
+
 .ig2{
-    border: 2px solid blue;
+   
     background-color: solid rgb(0, 0, 0);
+   color: white;
+   padding: 10px;
    
 }
 .nav:hover{
@@ -126,17 +128,71 @@ h1{
     color: rgb(0, 0, 0);
    display: block;
 }
+nav{
+    background-color: lightslategray;
+    display: none;
+    height: 100vh;
+}
 
 @media screen and (min-width:768px){
     .nav {
         display: none;
     }
+    nav{
+        display: flex;
+    }
+    .con{
+        display: flex;
+        width: 100%;
+       
+      }
+      .number{
+        display: none;
+      }
+      .con ul{
+        padding: 15px;
+      }
+     .con ul li{
+        list-style: none;
+        margin-top: 15px;
+     }
+     .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+     }
 }
 
 @media screen and (min-width:1200px){
-    .nav {
-       display: flex;
+    
+    .number {
+        display: flex;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
+.session{
+   
+    width: 100%;
+}
 
+
+.pace{
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(2, 14, 3);
+   
+  }
+.pace p{
+    color: whitesmoke;
+    
+}
